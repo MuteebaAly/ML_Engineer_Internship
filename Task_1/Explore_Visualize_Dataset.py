@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# <a href="https://colab.research.google.com/github/MuteebaAly/ML_Engineer_Internship/blob/main/Task_1/Explore_Visualize_Dataset.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 # import libraries
 
@@ -13,8 +9,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-# Create graphs folder to save all plots
-os.makedirs("graphs", exist_ok=True)
 
 
 # Load iris dataset
@@ -84,7 +78,6 @@ sns.scatterplot(data=df, x="petal_length", y="petal_width", hue="species", palet
 plt.title("Iris Dataset: Petal Length vs Petal Width")
 plt.xlabel("petal_length(cm)")
 plt.ylabel("petal_width(cm)")
-plt.savefig("graphs/01_Iris_Dataset:_Petal_Length_vs_Petal_Widt.png", bbox_inches='tight')
 plt.show()
 
 
@@ -97,7 +90,6 @@ sns.scatterplot(data=df, x="sepal_length", y="sepal_width",hue="species",palette
 plt.xlabel("sepal_length(cm)")
 plt.ylabel("sepal_width(cm)")
 plt.title("Iris Dataset: Sepal Length vs sepal Width")
-plt.savefig("graphs/02_Iris_Dataset:_Sepal_Length_vs_sepal_Widt.png", bbox_inches='tight')
 plt.show()
 
 
@@ -111,7 +103,6 @@ sns.histplot(data=df,x="petal_length")
 plt.xlabel("Petal_length(cm)")
 plt.ylabel("Numbers Of flowers")
 plt.title("Overall Distribution of Petal Lengths in Iris Dataset")
-plt.savefig("graphs/03_Overall_Distribution_of_Petal_Lengths_in.png", bbox_inches='tight')
 plt.show()
 
 #its shows that k kitny flowers hai jinki length in ranges mai hai pooray dataset mai sai
@@ -128,7 +119,6 @@ sns.histplot(data=df,x="petal_length",hue="species")
 plt.xlabel("Petal_length(cm)")
 plt.ylabel("Numbers Of flowers")
 plt.title("Species Distribution of Petal Length in Iris Dataset")
-plt.savefig("graphs/04_Species_Distribution_of_Petal_Length_in_.png", bbox_inches='tight')
 plt.show()
 
 #ye mujhy bataraha hai k har species mai kitny flowers hai jinki length in ranges mai hai
@@ -145,7 +135,6 @@ sns.histplot(data=df,x="petal_width")
 plt.xlabel("Petal_length(cm)")
 plt.ylabel("Numbers Of flowers")
 plt.title("Overall Distribution of Petal Width in Iris Dataset")
-plt.savefig("graphs/05_Overall_Distribution_of_Petal_Width_in_I.png", bbox_inches='tight')
 plt.show()
 
 #ye mujhy bataraha hai k sarey datset  mai kitny flowers hai jinki width in ranges mai hai
@@ -162,7 +151,6 @@ sns.histplot(data=df,x="petal_width",hue="species")
 plt.xlabel("Petal_length(cm)")
 plt.ylabel("Numbers Of flowers")
 plt.title("Species Distribution of Petal width in Iris Dataset")
-plt.savefig("graphs/06_Species_Distribution_of_Petal_width_in_I.png", bbox_inches='tight')
 plt.show()
 
 #ye mujhy bataraha hai k har species mai kitny flowers hai jinki width in ranges mai hai
@@ -178,7 +166,6 @@ sns.histplot(data=df,x="sepal_length")
 plt.xlabel("sepal_length(cm)")
 plt.ylabel("Numbers Of flowers")
 plt.title("Overall Distribution of sepal_length in Iris Dataset")
-plt.savefig("graphs/07_Overall_Distribution_of_sepal_length_in_.png", bbox_inches='tight')
 plt.show()
 
 #ye mujhy bataraha hai ky pooray datasets mai sai kitny flowers hai jinki sepal_length in ranges mai hai
@@ -194,7 +181,6 @@ sns.histplot(data=df,x="sepal_length",hue="species")
 plt.xlabel("sepal_length(cm)")
 plt.ylabel("Numbers Of flowers")
 plt.title("Specie Distribution of sepal_length in Iris Dataset")
-plt.savefig("graphs/08_Specie_Distribution_of_sepal_length_in_I.png", bbox_inches='tight')
 plt.show()
 
 
@@ -208,7 +194,6 @@ sns.histplot(data=df,x="sepal_width")
 plt.xlabel("sepal_width(cm)")
 plt.ylabel("Numbers Of flowers")
 plt.title("Overall Distribution of sepal_width in Iris Dataset")
-plt.savefig("graphs/09_Overall_Distribution_of_sepal_width_in_I.png", bbox_inches='tight')
 plt.show()
 
 
@@ -222,7 +207,6 @@ sns.histplot(data=df,x="sepal_width",hue="species")
 plt.xlabel("sepal_width(cm)")
 plt.ylabel("Numbers Of flowers")
 plt.title("Specie Distribution of sepal_width in Iris Dataset")
-plt.savefig("graphs/10_Specie_Distribution_of_sepal_width_in_Ir.png", bbox_inches='tight')
 plt.show()
 
 
@@ -237,7 +221,6 @@ sns.boxplot(data=df, palette="Set2")
 plt.title("Box Plot of All Numerical Features in Iris Dataset")
 plt.xlabel("all species")
 plt.ylabel("lenght in cm")
-plt.savefig("graphs/11_Box_Plot_of_All_Numerical_Features_in_Ir.png", bbox_inches='tight')
 plt.show()
 
 #after showing graph outliers are detect  only in the sepal width column
@@ -253,7 +236,6 @@ sns.boxplot(data=df, x="species", y="petal_length", palette="Set2")
 plt.title("Box Plot of Petal Length for Each Species")
 plt.xlabel("Flower Species")
 plt.ylabel("Petal Length (cm)")
-plt.savefig("graphs/12_Box_Plot_of_Petal_Length_for_Each_Specie.png", bbox_inches='tight')
 plt.show()
 
 
@@ -268,7 +250,6 @@ sns.boxplot(data=df, x="species", y="sepal_length", palette="Set2")
 plt.title("Box Plot of sepal Length for Each Species")
 plt.xlabel("Flower Species")
 plt.ylabel("sepal Length (cm)")
-plt.savefig("graphs/13_Box_Plot_of_sepal_Length_for_Each_Specie.png", bbox_inches='tight')
 plt.show()
 
 
@@ -283,7 +264,6 @@ sns.boxplot(data=df, x="species", y="petal_width", palette="Set2")
 plt.title("Box Plot of Petal width for Each Species")
 plt.xlabel("Flower Species")
 plt.ylabel("Petal Width (cm)")
-plt.savefig("graphs/14_Box_Plot_of_Petal_width_for_Each_Species.png", bbox_inches='tight')
 plt.show()
 
 
@@ -298,7 +278,6 @@ sns.boxplot(data=df, x="species", y="sepal_width", palette="Set2")
 plt.title("Box Plot of sepal width for Each Species")
 plt.xlabel("Flower Species")
 plt.ylabel("Sepal Width (cm)")
-plt.savefig("graphs/15_Box_Plot_of_sepal_width_for_Each_Species.png", bbox_inches='tight')
 plt.show()
 
 
