@@ -28,26 +28,15 @@ print(df)
 # show shape
 
 # In[ ]:
-
-
 df.shape
-
-
 # show column names
 
 # In[ ]:
-
-
 df.columns
-
-
 # show few rows
 
 # In[ ]:
-
-
 df.head()
-
 #Also put the number of rows in parameter
 #df.head(10)
 
