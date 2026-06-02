@@ -67,5 +67,5 @@ Trained both models on the same data and compared their predictions against actu
 ---
 
 ## Links
-🐍 [View Python Script](Predict Future Stock Prices.ipynb)
+🐍 [View Python Script](Task_2/Predict_Future_Stock_Prices.ipynb)
 

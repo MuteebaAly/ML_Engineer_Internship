@@ -31,4 +31,25 @@ Worked with the Iris Dataset to explore and visualize data using Pandas, Seaborn
 
 ---
 
+| Task 2 | Explore & Visualize Dataset | ✅ Completed |
+
+---
+
+## Task 2 — Predict Future Stock Prices
+
+Worked with the yfinance library to fetch Apple stock data and trained Linear Regression and Random Forest models to predict the next day's close price. Also created a line graph to evaluate and compare both models' predictions against the actual close prices.
+
+🐍 [View Code With Outputs](Task_2/Predict_Future_Stock_Prices.ipynb)
+📄 [Task Details](Task_2/README.md)
+
+---
+
+## Tools & Libraries Used
+
+- Python
+- Scikit-learn
+- Matplotlib
+- Jupyter Notebook
+
+---
 *This repository will keep growing as new tasks are assigned throughout the internship.*
