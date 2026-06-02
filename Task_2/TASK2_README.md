@@ -14,7 +14,6 @@ The goal of this task was to predict the next day's closing price of Apple stock
 - No missing values in any column
 - Features used for training: Open, High, Low, Close, Volume
 
----
 
 **Libraries Used**
 
@@ -26,7 +25,7 @@ The goal of this task was to predict the next day's closing price of Apple stock
 
 ---
 
-# What I Did
+## What I Did
 
 **Data Preprocessing**
 - Created a new column `Target_Close` using `shift(-1)` — this moves the closing price one day forward so the model learns to predict the next day's price
@@ -68,5 +67,5 @@ Trained both models on the same data and compared their predictions against actu
 ---
 
 ## Links
-🐍 [View Python Script](Predict_Future_Stock_Prices.ipynb)
+🐍 [View Python Script](Predict Future Stock Prices.ipynb)
 
