@@ -6,7 +6,7 @@ The goal of this task was to predict the next day's closing price of Apple stock
 ---
 
 ## Dataset
-Apple (AAPL) stock data from **January 2020 to May 2026** — pulled directly from Yahoo Finance using `yfinance`. No manual download needed, the library fetches it straight from the API.
+**Apple (AAPL) stock data**  — from **January 2020 to May 2026** — pulled directly from Yahoo Finance using `yfinance`. No manual download needed, the library fetches it straight from the API.
 
 - Total rows: 1,610 trading days
 - Total columns: 5
@@ -16,7 +16,7 @@ Apple (AAPL) stock data from **January 2020 to May 2026** — pulled directly fr
 
 ---
 
-## Libraries Used
+**Libraries Used**
 
 | Library | Purpose |
 |---|---|
@@ -28,19 +28,19 @@ Apple (AAPL) stock data from **January 2020 to May 2026** — pulled directly fr
 
 # What I Did
 
-## Data Preprocessing
+**Data Preprocessing**
 - Created a new column `Target_Close` using `shift(-1)` — this moves the closing price one day forward so the model learns to predict the next day's price
 - Dropped the last row since it had no target value (NaN after shifting)
 - Split data into 80% training and 20% testing
 
 
-## Data Exploration
+**Data Exploration**
 - Checked column names and data structure using `info()`
 - Verified the dataset shape — 1,610 rows and 5 columns
 - Confirmed no missing values after preprocessing
 
 
-## Models Applied
+**Models Applied**
 
 | Model | Accuracy (R2 Score) |
 |---|---|
