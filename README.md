@@ -52,4 +52,27 @@ Worked with the yfinance library to fetch Apple stock data and trained Linear Re
 - Jupyter Notebook
 
 ---
+
+| Task 3 | Heart Disease Prediction | ✅ Completed |
+
+---
+
+## Task 3 — Heart Disease Prediction
+
+Worked with the Heart Disease UCI Dataset to build a binary classification model that predicts whether a patient is at risk of heart disease. Cleaned medical data, handled missing values, and trained Logistic Regression and Decision Tree models. Evaluated using Accuracy, Confusion Matrix, and ROC-AUC Score (AUC = 0.89).
+
+📓 [View Notebook](Task_3/Heart_Diseases_prediction.ipynb)
+📄 [Task Details](Task_3/README.md)
+
+---
+
+## Tools & Libraries Used
+
+- Python
+- Pandas
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
 *This repository will keep growing as new tasks are assigned throughout the internship.*
