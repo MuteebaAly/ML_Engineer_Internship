@@ -107,10 +107,10 @@ An AUC of 0.89 means the model has a strong ability to distinguish between healt
 
 ---
 
-## Libraries Used
 
-```
-pandas | scikit-learn | matplotlib | seaborn
+
+## Links
+🐍 [View Python Script](Heart_Diseases_prediction.ipynb)
 ```
 
 
